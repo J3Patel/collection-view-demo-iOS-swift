@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCustomCell" id="gTV-IL-0wX" customClass="MyCustomCellCollectionViewCell" customModule="CollectionViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="179"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BABY.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-UJ-XmQ">
+                        <rect key="frame" x="8" y="8" width="134" height="106"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="106" id="NBp-qC-Tzy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wassup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gri-6f-b7Q">
+                        <rect key="frame" x="8" y="124" width="134" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-xR-jvQ">
+                        <rect key="frame" x="8" y="149" width="134" height="30"/>
+                        <animations/>
+                        <state key="normal" title="Check Me"/>
+                        <connections>
+                            <action selector="buttonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="MoO-d3-IgY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xFl-xR-jvQ" firstAttribute="top" secondItem="gri-6f-b7Q" secondAttribute="bottom" constant="4" id="KaG-nn-ron"/>
+                <constraint firstAttribute="trailing" secondItem="gri-6f-b7Q" secondAttribute="trailing" constant="8" id="KyO-3c-u7o"/>
+                <constraint firstAttribute="trailing" secondItem="xFl-xR-jvQ" secondAttribute="trailing" constant="8" id="Oro-dw-bhC"/>
+                <constraint firstAttribute="trailing" secondItem="Mkx-UJ-XmQ" secondAttribute="trailing" constant="8" id="bQ0-uU-4dw"/>
+                <constraint firstItem="Mkx-UJ-XmQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="e9J-nD-IPt"/>
+                <constraint firstAttribute="bottom" secondItem="xFl-xR-jvQ" secondAttribute="bottom" id="fo2-hf-oOh"/>
+                <constraint firstItem="Mkx-UJ-XmQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="lav-vn-CmL"/>
+                <constraint firstItem="gri-6f-b7Q" firstAttribute="top" secondItem="Mkx-UJ-XmQ" secondAttribute="bottom" constant="10" id="mW7-8o-8bE"/>
+                <constraint firstItem="xFl-xR-jvQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="sWp-z9-EYr"/>
+                <constraint firstItem="gri-6f-b7Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="w6p-eY-EWu"/>
+            </constraints>
+            <size key="customSize" width="150" height="179"/>
+            <connections>
+                <outlet property="nameLabel" destination="gri-6f-b7Q" id="LFj-YC-9ep"/>
+                <outlet property="openAccountButton" destination="xFl-xR-jvQ" id="ZLu-zv-0YR"/>
+                <outlet property="profileImageView" destination="Mkx-UJ-XmQ" id="Nh5-5w-yBW"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="222.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BABY.jpg" width="596" height="720"/>
+    </resources>
+</document>
